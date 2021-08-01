@@ -1,0 +1,21 @@
+@mixin socials {
+  .nav__socials {
+    display: flex;
+    justify-content: center;
+
+    &-link {
+      margin: 1rem;
+      padding: 1rem;
+      text-decoration: none;
+      color: $color-font-dirty-white;
+      transition: color 0.3s, text-shadow 0.3s;
+      &:hover {
+        color: $color-white;
+        text-shadow: 0 0 5px rgba($color-white, 0.8);
+      }
+    }
+    &-icon {
+      font-size: 2.5rem;
+    }
+  }
+}
