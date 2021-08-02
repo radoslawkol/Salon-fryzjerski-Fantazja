@@ -1,0 +1,34 @@
+// SERVICES
+
+.services {
+  padding: 10rem 3rem;
+  background-color: $color-white;
+
+  &__container {
+    display: grid;
+    margin-top: 4rem;
+  }
+
+  &__sort {
+    margin: 4rem;
+    text-align: center;
+    color: $color-secondary;
+  }
+  &__img {
+    margin: 2rem auto;
+    width: 80%;
+    &--woman {
+      transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+    }
+  }
+  &__text {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .heading-2 {
+    color: $color-primary;
+  }
+}

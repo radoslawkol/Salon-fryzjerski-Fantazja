@@ -1,14 +1,32 @@
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100vw;
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(158, 139, 139);
+  background-color: $color-primary;
 }
 
 .wrapper {
   overflow-x: hidden;
+  width: 100vw;
+}
+
+.heading-2 {
+  color: $color-white;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    width: 78px;
+    height: 26px;
+    background-image: url("/img/line-phone.svg");
+  }
 }

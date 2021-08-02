@@ -1,0 +1,55 @@
+.header {
+  //   position: absolute;
+  width: 100%;
+  height: calc(100vh - #{$navigationHeight});
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.623)),
+    url("/img/beauty-salon-640.jpg") no-repeat;
+  background-size: cover;
+  background-position: 20% center;
+
+  @media (min-width: 768px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.623)),
+      url("/img/beauty-salon-1280.jpg") no-repeat;
+  }
+  @media (min-width: 1028px) {
+    background: linear-gradient(rgba(0, 0, 0, 0.623)),
+      url("/img/beauty-salon-1920.jpg") no-repeat;
+  }
+
+  &__text {
+    text-align: center;
+    &-heading {
+      font-size: 4rem;
+      color: $color-secondary;
+      margin-bottom: 4rem;
+    }
+
+    &-small {
+      font-size: 3rem;
+      color: $color-white;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    bottom: 20%;
+    font-size: 3rem;
+    color: $color-white;
+  }
+
+  &__button {
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    background-color: $color-white;
+    border: none;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: $color-secondary;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+// CONTACT
+
+.contact {
+  padding: 10rem 3rem 3rem;
+  background-color: $color-white;
+  text-align: center;
+
+  .heading-2 {
+    text-align: left;
+    color: $color-primary;
+  }
+
+  &__phone {
+    margin: 8rem auto 2rem;
+    font-size: 2.3rem;
+  }
+
+  &__open {
+    &-heading {
+      margin-bottom: 2rem;
+    }
+
+    &-list {
+      width: fit-content;
+      margin: 2rem auto;
+      text-align: left;
+      list-style: none;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-hour {
+      text-align: right;
+      margin-left: 2rem;
+    }
+  }
+
+  &__button {
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    border: 2px solid $color-secondary;
+    background: none;
+    transform: scale(1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    }
+    &:focus {
+      transform: scale(0.95);
+    }
+  }
+
+  &__location {
+    margin: 4rem 0;
+  }
+
+  &__address {
+    margin-bottom: 3rem;
+  }
+
+  &__map {
+    width: 100%;
+  }
+
+  &__socials {
+    margin-bottom: 3rem;
+
+    &-link {
+      color: $color-secondary;
+      transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+      &:hover {
+        color: $color-secondary;
+        transform: scale(1.08);
+        text-shadow: 0 0 5px rgba($color-secondary, 0.8);
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: $color-font-dirty-white;
+}

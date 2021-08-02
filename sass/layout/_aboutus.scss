@@ -1,0 +1,26 @@
+// ABOUTUS
+
+.aboutus {
+  background-color: $color-primary;
+  padding: 3rem;
+
+  &__article {
+    margin-top: 4rem;
+    &-heading {
+      margin-bottom: 2rem;
+      color: $color-secondary;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      color: $color-font-dirty-white;
+      font-size: 1.4rem;
+    }
+
+    &-img {
+      margin-top: 4rem;
+      width: 100%;
+    }
+  }
+}

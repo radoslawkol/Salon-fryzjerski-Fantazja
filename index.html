@@ -22,6 +22,20 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
@@ -44,39 +58,474 @@
           id="toggleBtn"
         ></button>
       </div>
-      <!-- SIDE NAVIGATION -->
-      <nav class="nav nav__white">
-        <div class="nav nav__yellow">
-          <div class="nav nav__black">
-            <ul class="nav__menu">
-              <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-              <li class="nav__item"><a href="" class="nav__link">O nas</a></li>
-              <li class="nav__item"><a href="" class="nav__link">Usługi</a></li>
-              <li class="nav__item"><a href="" class="nav__link">Cennik</a></li>
-              <li class="nav__item">
-                <a href="" class="nav__link">Galeria</a>
-              </li>
-              <li class="nav__item"><a href="" class="nav__link">Opinie</a></li>
-              <li class="nav__item">
-                <a href="" class="nav__link">Kontakt</a>
-              </li>
-            </ul>
-            <div class="nav__socials">
-              <a href="" class="nav__socials-link"
-                ><i class="nav__socials-icon fab fa-facebook"></i
-              ></a>
-              <a href="" class="nav__socials-link"
-                ><i class="nav__socials-icon fab fa-instagram-square"></i
-              ></a>
-              <a href="" class="nav__socials-link"
-                ><i class="nav__socials-icon fab fa-tiktok"></i
-              ></a>
+      <header class="header">
+        <div class="header__text">
+          <small class="header__text-small">Salon fryzjerski</small>
+          <h1 class="header__text-heading">Fantazja</h1>
+          <button class="header__button">Umów się</button>
+        </div>
+        <a href="#aboutus" class="header__arrow"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+      </header>
+      <main class="main">
+        <section id="aboutus" class="aboutus">
+          <h2 class="heading-2">O nas</h2>
+          <article class="aboutus__article">
+            <h3 class="aboutus__article-heading">Jak pracujemy</h3>
+            <p class="aboutus__article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              quam eius nihil, alias ratione accusamus perspiciatis? Quibusdam
+              itaque neque, perspiciatis id aliquid cupiditate hic reiciendis?
+            </p>
+            <img
+              src="/img/hair saloon.jpg"
+              alt="Zdjęcie salonu ze środka"
+              class="aboutus__article-img"
+            />
+          </article>
+          <article class="aboutus__article">
+            <h3 class="aboutus__article-heading">Skąd zamiłowanie?</h3>
+            <p class="aboutus__article-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis totam neque unde quod a aspernatur ad odio ipsam? Amet,
+              provident.
+            </p>
+          </article>
+          <article class="aboutus__article">
+            <h3 class="aboutus__article-heading">Jak powstał nasz salon?</h3>
+            <p class="aboutus__article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur magnam fugit aliquam numquam, molestias cupiditate
+              laboriosam laudantium hic autem, alias commodi. Unde iure magni
+              eum asperiores quos deserunt rem tempore!
+            </p>
+          </article>
+        </section>
+
+        <section id="services" class="services">
+          <h2 class="heading-2">Usługi</h2>
+          <div class="services__container">
+            <h3 class="services__sort services__sort--woman">Damskie</h3>
+            <img
+              srcset="/img/girl-small.jpg 680w, /img/girl-medium.jpg 1280w"
+              sizes="(min-width: 1280px) 1280w, 680w"
+              src="/img/girl-small.jpg"
+              alt="zdjęcie kobiety"
+              class="services__img services__img--woman"
+            />
+            <p class="services__text services__text--woman">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+              deserunt voluptates vitae asperiores consequatur explicabo modi
+              voluptatem! Accusantium hic nesciunt tempora debitis animi minus,
+              ex deleniti eum magni, nemo quaerat?
+            </p>
+            <h3 class="services__sort services__sort--man">Męskie</h3>
+            <p class="services__text services__text--man">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+              deserunt voluptates vitae asperiores consequatur explicabo modi
+              voluptatem! Accusantium hic nesciunt tempora debitis animi minus,
+              ex deleniti eum magni, nemo quaerat?
+            </p>
+            <img
+              srcset="/img/man-small.jpg 680w, /img/man-medium.jpg 1280w"
+              sizes="(min-width: 1280px) 1280w, 680w"
+              src="/img/man-small.jpg"
+              class="services__img services__img--man"
+            />
+          </div>
+        </section>
+
+        <section id="price" class="price">
+          <h2 class="heading-2">Cennik</h2>
+          <table class="price__table table">
+            <thead class="table__head">
+              <tr class="table__row">
+                <th class="table__heading">Nazwa usługi</th>
+                <th class="table__heading">Cena</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__cell">Strzyżenie i ułożenie fryzury</td>
+                <td class="table__cell">35-45 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Prostowanie, falowanie włosów</td>
+                <td class="table__cell">20-30 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Stylizacja ślubna - próba</td>
+                <td class="table__cell">75-90 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Fryzury okolicznościowe</td>
+                <td class="table__cell">90-110 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Koloryzacja włosów</td>
+                <td class="table__cell">70-140 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Beleyage, ombre</td>
+                <td class="table__cell">50-65 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Tonowanie włośów</td>
+                <td class="table__cell">35-55 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Keratyna</td>
+                <td class="table__cell">70-110 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Dekoloracja</td>
+                <td class="table__cell">90-110 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Ampułka pielęgnacyjna</td>
+                <td class="table__cell">10-15 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Strzyżenie damskie</td>
+                <td class="table__cell">40-50 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Strzyżenie męskie</td>
+                <td class="table__cell">25-40 zł</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">Strzyżenie dziecięce</td>
+                <td class="table__cell">20-30 zł</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="gallery" class="gallery">
+          <h2 class="heading-2">Galeria</h2>
+          <div class="gallery__container">
+            <div class="gallery__img-container">
+              <img
+                src="/img/hair-1-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie"
+              />
+            </div>
+            <div class="gallery__img-container">
+              <img
+                src="/img/hair-2-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie"
+              />
+            </div>
+            <div class="gallery__img-container">
+              <img
+                src="/img/hair-3-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie"
+              />
+            </div>
+            <div class="gallery__img-container">
+              <img
+                src="/img/hair-4-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie"
+              />
+            </div>
+            <div class="gallery__img-container">
+              <img
+                src="/img/hair-5-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie"
+              />
+            </div>
+            <div class="gallery__img-container">
+              <img
+                src="/img/hair-6-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie"
+              />
             </div>
           </div>
-        </div>
-      </nav>
-      <header class="header"></header>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+          <h2 class="heading-2">Opinie</h2>
+          <h3 class="testimonials__heading-small">Co o nas mówią?</h3>
+          <div class="testimonials__container slider">
+            <div class="testimonials__card">
+              <h4 class="testimonials__card-heading">
+                Najlepszy fryzjer w&nbsp;mieście!
+              </h4>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                nemo magnam sint recusandae minima ipsa vel doloribus eveniet
+                quia facilis impedit ducimus harum quidem earum, qui ab? At, sed
+                saepe.
+              </p>
+              <figure class="testimonials__card-user">
+                <img
+                  src="/img/user-1.jpg"
+                  alt="Zdjęcie użytkownika"
+                  class="testimonials__card-img"
+                />
+                <figcaption class="testimonials__card-data">
+                  <span class="testimonials__card-name">Monika Kowalska</span>
+                  <span class="testimonials__card-location">Bielsko-Biała</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="testimonials__card">
+              <h4 class="testimonials__card-heading">Na pewno tam wrócę!</h4>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                nemo magnam sint recusandae minima ipsa vel doloribus eveniet
+                quia facilis impedit ducimus harum quidem earum, qui ab? At, sed
+                saepe.
+              </p>
+              <figure class="testimonials__card-user">
+                <img
+                  src="/img/user-2.jpg"
+                  alt="Zdjęcie użytkownika"
+                  class="testimonials__card-img"
+                />
+                <figcaption class="testimonials__card-data">
+                  <span class="testimonials__card-name">Izabela Nowak</span>
+                  <span class="testimonials__card-location">Kraków</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="testimonials__card">
+              <h4 class="testimonials__card-heading">
+                Jestem zaskoczona efektami farbowania!
+              </h4>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                nemo magnam sint recusandae minima ipsa vel doloribus eveniet
+                quia facilis impedit ducimus harum quidem earum, qui ab? At, sed
+                saepe.
+              </p>
+              <figure class="testimonials__card-user">
+                <img
+                  src="/img/user-3.jpg"
+                  alt="Zdjęcie użytkownika"
+                  class="testimonials__card-img"
+                />
+                <figcaption class="testimonials__card-data">
+                  <span class="testimonials__card-name">Bartek Śmiech</span>
+                  <span class="testimonials__card-location">Warszawa</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="testimonials__card">
+              <h4 class="testimonials__card-heading">
+                Najlepszy fryzjer w mieście!
+              </h4>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                nemo magnam sint recusandae minima ipsa vel doloribus eveniet
+                quia facilis impedit ducimus harum quidem earum, qui ab? At, sed
+                saepe.
+              </p>
+              <figure class="testimonials__card-user">
+                <img
+                  src="/img/user-4.jpg"
+                  alt="Zdjęcie użytkownika"
+                  class="testimonials__card-img"
+                />
+                <figcaption class="testimonials__card-data">
+                  <span class="testimonials__card-name">Anastazja Żbik</span>
+                  <span class="testimonials__card-location">Wrocław</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="testimonials__card">
+              <h4 class="testimonials__card-heading">
+                Najlepszy fryzjer w mieście!
+              </h4>
+              <p class="testimonials__card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                nemo magnam sint recusandae minima ipsa vel doloribus eveniet
+                quia facilis impedit ducimus harum quidem earum, qui ab? At, sed
+                saepe.
+              </p>
+              <figure class="testimonials__card-user">
+                <img
+                  src="/img/user-5.jpg"
+                  alt="Zdjęcie użytkownika"
+                  class="testimonials__card-img"
+                />
+                <figcaption class="testimonials__card-data">
+                  <span class="testimonials__card-name">Jarek Kołodziej</span>
+                  <span class="testimonials__card-location">Katowice</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <h2 class="heading-2">Kontakt</h2>
+          <div class="contact__phone">
+            <span class="fas fa-phone-alt contact__phone-icon"></span>
+            <span class="contact__phone-number">123 321 231</span>
+          </div>
+          <div class="socials contact__socials">
+            <a href="" class="socials-link contact__socials-link"
+              ><i class="socials-icon contact__socials-icon fab fa-facebook"></i
+            ></a>
+            <a href="" class="socials-link contact__socials-link"
+              ><i
+                class="
+                  socials-icon
+                  contact__socials-icon
+                  fab
+                  fa-instagram-square
+                "
+              ></i
+            ></a>
+            <a href="" class="socials-link contact__socials-link"
+              ><i class="socials-icon contact__socials-icon fab fa-tiktok"></i
+            ></a>
+          </div>
+          <div class="contact__open">
+            <h3 class="contact__open-heading">Godziny otwarcia:</h3>
+            <ul class="contact__open-list">
+              <li class="contact__open-item">
+                Poniedziałek<span class="contact__open-hour">9.00 - 18.00</span>
+              </li>
+              <li class="contact__open-item">
+                Wtorek<span class="contact__open-hour">9.00 - 18.00</span>
+              </li>
+              <li class="contact__open-item">
+                Środa<span class="contact__open-hour">9.00 - 18.00</span>
+              </li>
+              <li class="contact__open-item">
+                Czwartek<span class="contact__open-hour">9.00 - 18.00</span>
+              </li>
+              <li class="contact__open-item">
+                Piątek<span class="contact__open-hour">9.00 - 18.00</span>
+              </li>
+              <li class="contact__open-item">
+                Sobota<span class="contact__open-hour">9.00 - 13.00</span>
+              </li>
+              <li class="contact__open-item">
+                Niedziela<span class="contact__open-hour">nieczynne</span>
+              </li>
+            </ul>
+            <button class="contact__button">Ustal termin</button>
+          </div>
+          <div class="contact__location">
+            <p class="contact__address">
+              ul. Przypadkowa 9<br /><span>Bielsko-Biała</span>
+            </p>
+            <iframe
+              class="contact__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17318.36432739814!2d19.035587945531997!3d49.816329898887695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716a1dfc1f47b1f%3A0x94edac8886e432a5!2sGaleria%20Sfera!5e0!3m2!1spl!2spl!4v1627907307068!5m2!1spl!2spl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
+
+        <footer class="footer" id="footer">
+          <p class="footer__text">&copy; 2021 Fantazja, All rights reserved.</p>
+        </footer>
+      </main>
+      <!-- SIDE NAVIGATION -->
+      <div class="nav nav__white">
+            <div class="nav nav__yellow">
+              <div class="nav nav__black">
+                <ul class="nav__menu">
+                  <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                  <li class="nav__item">
+                    <a href="#aboutus" class="nav__link">O nas</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#services" class="nav__link">Usługi</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#price" class="nav__link">Cennik</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#gallery" class="nav__link">Galeria</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#testimonials" class="nav__link">Opinie</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#contact" class="nav__link">Kontakt</a>
+                  </li>
+                </ul>
+                <div class="nav__socials socials">
+                  <a href="" class="nav__socials-link socials-link"
+                    ><i class="nav__socials-icon fab fa-facebook socials-icon"></i
+                  ></a>
+                  <a href="" class="nav__socials-link socials-link"
+                    ><i class="nav__socials-icon fab fa-instagram-square socials-icon"></i
+                  ></a>
+                  <a href="" class="nav__socials-link socials-link"
+                    ><i class="nav__socials-icon fab fa-tiktok socials-icon"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text/javascript">
+      $(".slider").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1228,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
     <script src="/script.js"></script>
   </body>
 </html>

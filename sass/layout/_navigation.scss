@@ -34,14 +34,18 @@
 }
 
 .nav {
+  position: fixed;
+  left: 0;
+  width: 100%;
   height: calc(100vh - #{$navigationHeight});
   transform: translateX(100%);
   text-align: center;
-  background-color: $color-white;
   transition: transform 0.3s ease-in-out;
+  z-index: 1000;
 
   &__white {
-    // position: relative;
+    top: $navigationHeight;
+    background-color: $color-white;
     transition-delay: 0.2s;
     &.visible {
       transition-delay: 0.2s;

@@ -1,5 +1,5 @@
 @mixin socials {
-  .nav__socials {
+  .socials {
     display: flex;
     justify-content: center;
 
@@ -16,6 +16,41 @@
     }
     &-icon {
       font-size: 2.5rem;
+    }
+  }
+}
+
+// PRICE TABLE
+
+.table {
+  margin: 4rem auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-size: 1.4rem;
+
+  &__head {
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+
+    tr {
+      background-color: rgba($color-secondary, 0.4);
+    }
+  }
+
+  &__heading {
+  }
+
+  &__cell {
+    padding: 0.5rem;
+
+    &:first-of-type {
+      border-right: 2px solid black;
+    }
+  }
+
+  &__row {
+    &:nth-child(even) {
+      background-color: rgba($color-secondary, 0.4);
     }
   }
 }
