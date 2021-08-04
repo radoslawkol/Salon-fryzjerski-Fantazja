@@ -60,9 +60,10 @@
       </div>
       <header class="header">
         <div class="header__text">
+          <img src="/img/logo.svg" alt="logo firmy Fantazja" class="header__logo">
           <small class="header__text-small">Salon fryzjerski</small>
           <h1 class="header__text-heading">Fantazja</h1>
-          <button class="header__button">Umów się</button>
+          <button class="header__button"><a href="https://booksy.com/biz/pl-pl/" target="_blank" class="header__link">Umów wizytę</a></button>
         </div>
         <a href="#aboutus" class="header__arrow"
           ><i class="fas fa-chevron-down"></i
@@ -71,36 +72,41 @@
       <main class="main">
         <section id="aboutus" class="aboutus">
           <h2 class="heading-2">O nas</h2>
-          <article class="aboutus__article">
-            <h3 class="aboutus__article-heading">Jak pracujemy</h3>
-            <p class="aboutus__article-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              quam eius nihil, alias ratione accusamus perspiciatis? Quibusdam
-              itaque neque, perspiciatis id aliquid cupiditate hic reiciendis?
-            </p>
-            <img
-              src="/img/hair saloon.jpg"
-              alt="Zdjęcie salonu ze środka"
-              class="aboutus__article-img"
-            />
-          </article>
-          <article class="aboutus__article">
-            <h3 class="aboutus__article-heading">Skąd zamiłowanie?</h3>
-            <p class="aboutus__article-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis totam neque unde quod a aspernatur ad odio ipsam? Amet,
-              provident.
-            </p>
-          </article>
-          <article class="aboutus__article">
-            <h3 class="aboutus__article-heading">Jak powstał nasz salon?</h3>
-            <p class="aboutus__article-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur magnam fugit aliquam numquam, molestias cupiditate
-              laboriosam laudantium hic autem, alias commodi. Unde iure magni
-              eum asperiores quos deserunt rem tempore!
-            </p>
-          </article>
+          <div class="aboutus__content-wrapper">
+          <div class="aboutus__articles">
+            <article class="aboutus__article">
+              <h3 class="aboutus__article-heading">Jak pracujemy</h3>
+              <p class="aboutus__article-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                quam eius nihil, alias ratione accusamus perspiciatis? Quibusdam
+                itaque neque, perspiciatis id aliquid cupiditate hic reiciendis?
+              </p>
+            </article>
+            <article class="aboutus__article">
+              <h3 class="aboutus__article-heading">Skąd zamiłowanie?</h3>
+              <p class="aboutus__article-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis totam neque unde quod a aspernatur ad odio ipsam? Amet,
+                provident.
+              </p>
+            </article>
+            <article class="aboutus__article">
+              <h3 class="aboutus__article-heading">Jak powstał nasz salon?</h3>
+              <p class="aboutus__article-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur magnam fugit aliquam numquam, molestias cupiditate
+                laboriosam laudantium hic autem, alias commodi. Unde iure magni
+                eum asperiores quos deserunt rem tempore!
+              </p>
+            </article>
+            
+          </div>
+          <img
+            src="/img/hair saloon.jpg"
+            alt="Zdjęcie salonu ze środka"
+            class="aboutus__article-img"
+          />
+          </div>
         </section>
 
         <section id="services" class="services">
@@ -112,7 +118,7 @@
               sizes="(min-width: 1280px) 1280w, 680w"
               src="/img/girl-small.jpg"
               alt="zdjęcie kobiety"
-              class="services__img services__img--woman"
+              class="services__img services__img--woman" loading=lazy
             />
             <p class="services__text services__text--woman">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
@@ -131,7 +137,7 @@
               srcset="/img/man-small.jpg 680w, /img/man-medium.jpg 1280w"
               sizes="(min-width: 1280px) 1280w, 680w"
               src="/img/man-small.jpg"
-              class="services__img services__img--man"
+              class="services__img services__img--man" loading=lazy
             />
           </div>
         </section>
@@ -209,44 +215,91 @@
               <img
                 src="/img/hair-1-small.jpg"
                 class="gallery__img"
-                alt="Zdjęcie"
+                alt="Zdjęcie" loading=lazy
               />
             </div>
             <div class="gallery__img-container">
               <img
                 src="/img/hair-2-small.jpg"
                 class="gallery__img"
-                alt="Zdjęcie"
+                alt="Zdjęcie" loading=lazy
               />
             </div>
             <div class="gallery__img-container">
               <img
                 src="/img/hair-3-small.jpg"
                 class="gallery__img"
-                alt="Zdjęcie"
+                alt="Zdjęcie" loading=lazy
               />
             </div>
             <div class="gallery__img-container">
               <img
                 src="/img/hair-4-small.jpg"
                 class="gallery__img"
-                alt="Zdjęcie"
+                alt="Zdjęcie" loading=lazy
               />
             </div>
             <div class="gallery__img-container">
               <img
                 src="/img/hair-5-small.jpg"
                 class="gallery__img"
-                alt="Zdjęcie"
+                alt="Zdjęcie" loading=lazy
               />
             </div>
             <div class="gallery__img-container">
               <img
                 src="/img/hair-6-small.jpg"
                 class="gallery__img"
-                alt="Zdjęcie"
+                alt="Zdjęcie" loading=lazy
               />
             </div>
+            <button class="showMoreBtn" id="showMoreBtn">Pokaż więcej &downarrow;</button>
+            <div class="gallery__container gallery__container--additional">
+
+              <div class="gallery__img-container">
+              <img
+                src="/img/hair-7-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie" loading=lazy
+              />
+            </div>
+              <div class="gallery__img-container">
+              <img
+                src="/img/hair-8-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie" loading=lazy
+              />
+            </div>
+              <div class="gallery__img-container">
+              <img
+                src="/img/hair-9-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie" loading=lazy
+              />
+            </div>
+              <div class="gallery__img-container">
+              <img
+                src="/img/hair-10-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie" loading=lazy
+              />
+            </div>
+              <div class="gallery__img-container">
+              <img
+                src="/img/hair-11-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie" loading=lazy
+              />
+            </div>
+              <div class="gallery__img-container">
+              <img
+                src="/img/hair-12-small.jpg"
+                class="gallery__img"
+                alt="Zdjęcie" loading=lazy
+              />
+            </div>
+            </div>
+            
           </div>
         </section>
 
@@ -268,7 +321,7 @@
                 <img
                   src="/img/user-1.jpg"
                   alt="Zdjęcie użytkownika"
-                  class="testimonials__card-img"
+                  class="testimonials__card-img" loading=lazy
                 />
                 <figcaption class="testimonials__card-data">
                   <span class="testimonials__card-name">Monika Kowalska</span>
@@ -288,7 +341,7 @@
                 <img
                   src="/img/user-2.jpg"
                   alt="Zdjęcie użytkownika"
-                  class="testimonials__card-img"
+                  class="testimonials__card-img" loading=lazy
                 />
                 <figcaption class="testimonials__card-data">
                   <span class="testimonials__card-name">Izabela Nowak</span>
@@ -310,7 +363,7 @@
                 <img
                   src="/img/user-3.jpg"
                   alt="Zdjęcie użytkownika"
-                  class="testimonials__card-img"
+                  class="testimonials__card-img" loading=lazy
                 />
                 <figcaption class="testimonials__card-data">
                   <span class="testimonials__card-name">Bartek Śmiech</span>
@@ -332,7 +385,7 @@
                 <img
                   src="/img/user-4.jpg"
                   alt="Zdjęcie użytkownika"
-                  class="testimonials__card-img"
+                  class="testimonials__card-img" loading=lazy
                 />
                 <figcaption class="testimonials__card-data">
                   <span class="testimonials__card-name">Anastazja Żbik</span>
@@ -354,7 +407,7 @@
                 <img
                   src="/img/user-5.jpg"
                   alt="Zdjęcie użytkownika"
-                  class="testimonials__card-img"
+                  class="testimonials__card-img" loading=lazy
                 />
                 <figcaption class="testimonials__card-data">
                   <span class="testimonials__card-name">Jarek Kołodziej</span>
@@ -367,68 +420,73 @@
 
         <section class="contact" id="contact">
           <h2 class="heading-2">Kontakt</h2>
-          <div class="contact__phone">
-            <span class="fas fa-phone-alt contact__phone-icon"></span>
-            <span class="contact__phone-number">123 321 231</span>
+          <div class="contact__wrapper">
+
+            <div class="contact__left">
+            <div class="contact__phone">
+              <span class="fas fa-phone-alt contact__phone-icon"></span>
+              <span class="contact__phone-number">123 321 231</span>
+            </div>
+            <div class="socials contact__socials">
+              <a href="https://www.facebook.com/" target="_blank" class="socials-link contact__socials-link"
+                ><i class="socials-icon contact__socials-icon fab fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank" class="socials-link contact__socials-link"
+                ><i
+                  class="
+                    socials-icon
+                    contact__socials-icon
+                    fab
+                    fa-instagram-square
+                  "
+                ></i
+              ></a>
+              <a href="https://www.tiktok.com/pl-PL/" target="_blank" class="socials-link contact__socials-link"
+                ><i class="socials-icon contact__socials-icon fab fa-tiktok"></i
+              ></a>
+            </div>
+            <div class="contact__open">
+              <h3 class="contact__open-heading">Godziny otwarcia:</h3>
+              <ul class="contact__open-list">
+                <li class="contact__open-item">
+                  Poniedziałek<span class="contact__open-hour">9.00 - 18.00</span>
+                </li>
+                <li class="contact__open-item">
+                  Wtorek<span class="contact__open-hour">9.00 - 18.00</span>
+                </li>
+                <li class="contact__open-item">
+                  Środa<span class="contact__open-hour">9.00 - 18.00</span>
+                </li>
+                <li class="contact__open-item">
+                  Czwartek<span class="contact__open-hour">9.00 - 18.00</span>
+                </li>
+                <li class="contact__open-item">
+                  Piątek<span class="contact__open-hour">9.00 - 18.00</span>
+                </li>
+                <li class="contact__open-item">
+                  Sobota<span class="contact__open-hour">9.00 - 13.00</span>
+                </li>
+                <li class="contact__open-item">
+                  Niedziela<span class="contact__open-hour">nieczynne</span>
+                </li>
+              </ul>
+              <button class="contact__button"><a href="https://booksy.com/biz/pl-pl/" target="_blank" class="contact__link">Umów wizytę</a></button>
+            </div>
           </div>
-          <div class="socials contact__socials">
-            <a href="" class="socials-link contact__socials-link"
-              ><i class="socials-icon contact__socials-icon fab fa-facebook"></i
-            ></a>
-            <a href="" class="socials-link contact__socials-link"
-              ><i
-                class="
-                  socials-icon
-                  contact__socials-icon
-                  fab
-                  fa-instagram-square
-                "
-              ></i
-            ></a>
-            <a href="" class="socials-link contact__socials-link"
-              ><i class="socials-icon contact__socials-icon fab fa-tiktok"></i
-            ></a>
-          </div>
-          <div class="contact__open">
-            <h3 class="contact__open-heading">Godziny otwarcia:</h3>
-            <ul class="contact__open-list">
-              <li class="contact__open-item">
-                Poniedziałek<span class="contact__open-hour">9.00 - 18.00</span>
-              </li>
-              <li class="contact__open-item">
-                Wtorek<span class="contact__open-hour">9.00 - 18.00</span>
-              </li>
-              <li class="contact__open-item">
-                Środa<span class="contact__open-hour">9.00 - 18.00</span>
-              </li>
-              <li class="contact__open-item">
-                Czwartek<span class="contact__open-hour">9.00 - 18.00</span>
-              </li>
-              <li class="contact__open-item">
-                Piątek<span class="contact__open-hour">9.00 - 18.00</span>
-              </li>
-              <li class="contact__open-item">
-                Sobota<span class="contact__open-hour">9.00 - 13.00</span>
-              </li>
-              <li class="contact__open-item">
-                Niedziela<span class="contact__open-hour">nieczynne</span>
-              </li>
-            </ul>
-            <button class="contact__button">Ustal termin</button>
-          </div>
-          <div class="contact__location">
-            <p class="contact__address">
-              ul. Przypadkowa 9<br /><span>Bielsko-Biała</span>
-            </p>
-            <iframe
-              class="contact__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17318.36432739814!2d19.035587945531997!3d49.816329898887695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716a1dfc1f47b1f%3A0x94edac8886e432a5!2sGaleria%20Sfera!5e0!3m2!1spl!2spl!4v1627907307068!5m2!1spl!2spl"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
+            <div class="contact__location contact__right">
+              <p class="contact__address">
+                ul. Przypadkowa 9<br /><span>Bielsko-Biała</span>
+              </p>
+              <iframe
+                class="contact__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17318.36432739814!2d19.035587945531997!3d49.816329898887695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716a1dfc1f47b1f%3A0x94edac8886e432a5!2sGaleria%20Sfera!5e0!3m2!1spl!2spl!4v1627907307068!5m2!1spl!2spl"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </section>
 
@@ -436,6 +494,8 @@
           <p class="footer__text">&copy; 2021 Fantazja, All rights reserved.</p>
         </footer>
       </main>
+
+       <button class="goUpBtn"><a href="#" class="goUpBtn__link"><i class="fas fa-chevron-up"></i></a></button>
       <!-- SIDE NAVIGATION -->
       <div class="nav nav__white">
             <div class="nav nav__yellow">
@@ -462,18 +522,20 @@
                   </li>
                 </ul>
                 <div class="nav__socials socials">
-                  <a href="" class="nav__socials-link socials-link"
+                  <a href="https://www.facebook.com/" target="_blank" class="nav__socials-link socials-link"
                     ><i class="nav__socials-icon fab fa-facebook socials-icon"></i
                   ></a>
-                  <a href="" class="nav__socials-link socials-link"
+                  <a href="https://www.instagram.com/" target="_blank" class="nav__socials-link socials-link"
                     ><i class="nav__socials-icon fab fa-instagram-square socials-icon"></i
                   ></a>
-                  <a href="" class="nav__socials-link socials-link"
+                  <a href="https://www.tiktok.com/pl-PL/" target="_blank" class="nav__socials-link socials-link"
                     ><i class="nav__socials-icon fab fa-tiktok socials-icon"></i
                   ></a>
                 </div>
               </div>
             </div>
+            
+           
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"

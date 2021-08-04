@@ -10,6 +10,23 @@
     color: $color-primary;
   }
 
+  &__wrapper {
+    @media (min-width: 1300px) {
+      display: flex;
+    }
+  }
+  &__left {
+    @media (min-width: 1300px) {
+      flex: 1;
+    }
+  }
+
+  &__right {
+    @media (min-width: 1300px) {
+      flex: 1;
+    }
+  }
+
   &__phone {
     margin: 8rem auto 2rem;
     font-size: 2.3rem;
@@ -25,6 +42,10 @@
       margin: 2rem auto;
       text-align: left;
       list-style: none;
+      @media (min-width: 1028px) {
+        width: 300px;
+        margin: 4rem auto;
+      }
     }
 
     &-item {
@@ -56,6 +77,11 @@
     }
   }
 
+  &__link {
+    text-decoration: none;
+    color: $color-primary;
+  }
+
   &__location {
     margin: 4rem 0;
   }
@@ -66,6 +92,9 @@
 
   &__map {
     width: 100%;
+    @media (min-width: 600px) {
+      width: 80%;
+    }
   }
 
   &__socials {
@@ -88,4 +117,5 @@
   font-size: 1.2rem;
   text-align: center;
   color: $color-font-dirty-white;
+  background-color: $color-primary;
 }

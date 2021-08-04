@@ -2,10 +2,34 @@
 
 .aboutus {
   background-color: $color-primary;
-  padding: 3rem;
+  padding: 10rem 3rem;
+  @media (min-width: 600px) {
+    padding: 10rem 5rem;
+  }
+  &__content-wrapper {
+    @media (min-width: 1028px) {
+      display: flex;
+    }
+    @media (min-width: 1400px) {
+      padding: 0 6rem;
+    }
+    @media (min-width: 1800px) {
+      padding: 0 10rem;
+    }
+  }
+  &__articles {
+    @media (min-width: 1028px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   &__article {
     margin-top: 4rem;
+    @media (min-width: 600px) {
+      padding: 0 5rem;
+      margin-top: 6rem;
+    }
     &-heading {
       margin-bottom: 2rem;
       color: $color-secondary;
@@ -19,8 +43,16 @@
     }
 
     &-img {
-      margin-top: 4rem;
+      display: block;
       width: 100%;
+      margin: 4rem auto;
+      @media (min-width: 600px) {
+        width: 70%;
+      }
+      @media (min-width: 1028px) {
+        width: 50%;
+        object-fit: cover;
+      }
     }
   }
 }

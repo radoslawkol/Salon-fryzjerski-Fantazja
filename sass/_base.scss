@@ -1,18 +1,23 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  @media (min-width: 768px) {
+    font-size: 75%;
+  }
+  @media (min-width: 1500px) {
+    font-size: 87.5%;
+  }
 }
 
 body {
-  width: 100vw;
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
-  background-color: $color-primary;
+  background-color: rgba(199, 17, 175, 0);
 }
 
 .wrapper {
   overflow-x: hidden;
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .heading-2 {

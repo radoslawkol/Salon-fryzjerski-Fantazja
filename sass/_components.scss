@@ -27,6 +27,10 @@
   border: 2px solid black;
   border-collapse: collapse;
   font-size: 1.4rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  @media (min-width: 600px) {
+    font-size: 1.6rem;
+  }
 
   &__head {
     padding: 0.5rem;
@@ -37,11 +41,11 @@
     }
   }
 
-  &__heading {
-  }
-
   &__cell {
     padding: 0.5rem;
+    @media (min-width: 600px) {
+      padding: 1rem;
+    }
 
     &:first-of-type {
       border-right: 2px solid black;
@@ -51,6 +55,35 @@
   &__row {
     &:nth-child(even) {
       background-color: rgba($color-secondary, 0.4);
+    }
+  }
+}
+
+.goUpBtn {
+  display: none;
+  position: fixed;
+  right: 1rem;
+  bottom: 4rem;
+  height: 5rem;
+  width: 5rem;
+  border: 1px solid rgba($color-white, 0.6);
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: rgba($color-secondary, 0.7);
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:visited,
+    &:focus,
+    &:link {
+      color: $color-primary;
     }
   }
 }

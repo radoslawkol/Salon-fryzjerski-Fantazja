@@ -1,5 +1,4 @@
 .header {
-  //   position: absolute;
   width: 100%;
   height: calc(100vh - #{$navigationHeight});
   display: flex;
@@ -13,14 +12,26 @@
   @media (min-width: 768px) {
     background: linear-gradient(rgba(0, 0, 0, 0.623)),
       url("/img/beauty-salon-1280.jpg") no-repeat;
+    background-size: cover;
+    background-position: 20% center;
   }
   @media (min-width: 1028px) {
     background: linear-gradient(rgba(0, 0, 0, 0.623)),
       url("/img/beauty-salon-1920.jpg") no-repeat;
+    background-size: cover;
+    background-position: 20% center;
+  }
+
+  &__logo {
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    margin: 0 auto;
   }
 
   &__text {
     text-align: center;
+    animation: fadeIn 0.7s ease;
     &-heading {
       font-size: 4rem;
       color: $color-secondary;
@@ -34,9 +45,11 @@
   }
   &__arrow {
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
+    padding: 1rem;
     font-size: 3rem;
     color: $color-white;
+    animation: arrowDown 0.7s 0.7s ease infinite;
   }
 
   &__button {
@@ -45,11 +58,17 @@
     background-color: $color-white;
     border: none;
     transition: background-color 0.3s;
+    animation: scaleBtn 1s 0.7s ease-in-out infinite;
     &:hover {
       background-color: $color-secondary;
     }
     &:focus {
       outline: none;
     }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-primary;
   }
 }

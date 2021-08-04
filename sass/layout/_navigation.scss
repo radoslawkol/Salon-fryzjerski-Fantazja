@@ -8,15 +8,28 @@
   padding: 0.5rem 1rem;
   color: #fff;
   background-color: $color-primary;
+  text-align: right;
+
+  &__phone {
+    flex: 1;
+    margin-right: 3rem;
+  }
 
   &__logo {
     display: flex;
     align-items: center;
     color: $color-secondary;
+    @media (min-width: 600px) {
+      font-size: 2rem;
+    }
 
     &-img {
       width: 3rem;
       height: 3rem;
+      @media (min-width: 600px) {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
     }
   }
 
@@ -26,6 +39,7 @@
     color: #fff;
     background: none;
     border: none;
+    cursor: pointer;
 
     &:focus {
       outline: none;
@@ -42,19 +56,33 @@
   text-align: center;
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
+  @media (min-width: 1028px) {
+    left: 50%;
+  }
+  @media (min-width: 1800px) {
+    left: 70%;
+  }
 
   &__white {
     top: $navigationHeight;
     background-color: $color-white;
     transition-delay: 0.2s;
+    @media (min-width: 1028px) {
+      width: 100%;
+    }
     &.visible {
       transition-delay: 0.2s;
     }
   }
   &__yellow {
-    margin-left: 5%;
+    position: absolute;
+    left: 0;
+    margin-left: 2rem;
     background-color: $color-secondary;
     transition-delay: 0.2s;
+    @media (min-width: 1028px) {
+      width: 100%;
+    }
 
     &.visible {
       transition-delay: 0.4s;
@@ -71,6 +99,14 @@
     justify-content: space-around;
     background-color: $color-primary;
     transition-delay: 0.2s;
+    @media (min-width: 1028px) {
+      width: 50%;
+      position: absolute;
+      left: 0;
+    }
+    @media (min-width: 1800px) {
+      width: 30%;
+    }
     &.visible {
       transition-delay: 0.6s;
     }
@@ -89,6 +125,11 @@
     text-transform: uppercase;
     color: $color-font-dirty-white;
     text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+    &:hover {
+      color: $color-white;
+      text-shadow: 0 0 5px rgba($color-white, 0.8);
+    }
   }
 
   &.visible {

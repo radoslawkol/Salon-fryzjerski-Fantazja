@@ -3,29 +3,75 @@
 .services {
   padding: 10rem 3rem;
   background-color: $color-white;
+  @media (min-width: 768px) {
+    padding: 10rem 5rem;
+  }
 
   &__container {
     display: grid;
+    row-gap: 3rem;
     margin-top: 4rem;
+    @media (min-width: 900px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 15rem 1fr 15rem 1fr;
+    }
+    @media (min-width: 1400px) {
+      padding: 0 10rem;
+    }
+    @media (min-width: 1800px) {
+      padding: 0 14rem;
+    }
   }
 
   &__sort {
     margin: 4rem;
     text-align: center;
     color: $color-secondary;
+    @media (min-width: 1800px) {
+      font-size: 3rem;
+    }
+    &--woman {
+      @media (min-width: 768px) {
+        grid-column: span 2;
+        align-self: center;
+      }
+    }
+    &--man {
+      @media (min-width: 768px) {
+        grid-column: span 2;
+        align-self: center;
+      }
+    }
   }
   &__img {
     margin: 2rem auto;
     width: 80%;
+    @media (min-width: 600px) {
+      width: 60%;
+    }
+    @media (min-width: 900px) {
+      width: 80%;
+    }
+    @media (min-width: 1228px) {
+      width: 60%;
+      align-self: center;
+    }
+
     &--woman {
       transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
+      @media (min-width: 768px) {
+        grid-column: 1/ 2;
+      }
     }
   }
   &__text {
     padding: 2rem;
     text-align: center;
     font-size: 1.6rem;
+    @media (min-width: 900px) {
+      align-self: center;
+    }
   }
 
   .heading-2 {
