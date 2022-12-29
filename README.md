@@ -9,3 +9,4 @@ The website is full responsive on mobile, tablets and computers.
 - HTML
 - Scss
 - JavaScript
+- Slick.js
